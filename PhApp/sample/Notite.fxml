@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="460.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Notite">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+            <ImageView fitHeight="450.0" fitWidth="652.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dsBuffer.bmp.png" />
+               </image>
+            </ImageView>
+                <Button layoutX="406.0" layoutY="76.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="109.0" text="Sterge" textFill="#261a62">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <TextField fx:id="add" layoutX="85.0" layoutY="57.0" prefHeight="136.0" prefWidth="249.0" />
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+            <ImageView fitHeight="414.0" fitWidth="652.0" layoutX="-1.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dsBuffer.bmp.png" />
+               </image>
+            </ImageView>
+                <TextField fx:id="NoteField" layoutX="75.0" layoutY="50.0" prefHeight="102.0" prefWidth="313.0" />
+                <Button layoutX="441.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleNotes" prefHeight="53.0" prefWidth="97.0" text="Adauga" textFill="#261a62">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewWindowAfterLoginController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="731.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@dsBuffer.bmp.png" />
+            </image>
+        </ImageView>
+        <GridPane layoutX="41.0" layoutY="43.0" prefHeight="315.0" prefWidth="200.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+                <children>
+                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleMed" prefHeight="66.0" prefWidth="121.0" text="+ Medicament" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+                    <Button mnemonicParsing="false" onAction="#handleCal" prefHeight="66.0" prefWidth="121.0" text="Calendar" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+                    <Button mnemonicParsing="false" onAction="#handleVerif" prefHeight="66.0" prefWidth="121.0" text="Verifica " GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+                </children>
+        </GridPane>
+        <GridPane layoutX="300.0" layoutY="53.0" prefHeight="300.0" prefWidth="218.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="218.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="0.0" prefWidth="0.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Adrian Popescu" textAlignment="CENTER" textFill="#261a62" textOverrun="CLIP" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                    <effect>
+                        <Bloom threshold="1.0" />
+                    </effect>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <font>
+                        <Font size="24.0" />
+                    </font></Label>
+                <Button mnemonicParsing="false" onAction="#handleCummasimt" prefHeight="66.0" prefWidth="121.0" text="Cum ma simt?" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+                <Label text="A (II) Rh+" textFill="#261a62" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font></Label>
+                <Label text="1730604354988" textFill="#261a62" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                    <font>
+                        <Font size="24.0" />
+                    </font></Label>
+                <ImageView fitHeight="92.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@edea03f0-14d6-47a3-83a7-9e125b94ec7f.jpg" />
+                    </image></ImageView>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

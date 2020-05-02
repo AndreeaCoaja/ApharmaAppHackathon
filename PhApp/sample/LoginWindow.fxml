@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="243.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginWindowController">
+    <children>
+        <ImageView fitHeight="243.0" fitWidth="412.0" layoutX="-5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@dsBuffer.bmp.png" />
+            </image>
+        </ImageView>
+        <GridPane alignment="center" hgap="10" layoutX="4.0" prefHeight="216.0" prefWidth="385.0" vgap="10">
+            <padding>
+                <Insets bottom="10" left="25" right="25" top="25" />
+            </padding>
+
+            <Text fill="#261a62" text="Bun venit!" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Text>
+
+            <Label text="Utilizator:" textAlignment="CENTER" textFill="#261a62" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Label>
+
+            <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Parola:" textAlignment="CENTER" textFill="#261a62" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Label>
+
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                <Button onAction="#handleSubmitButtonAction" style="-fx-background-color: #B3B3B1;" text="Conecteaza-te" textAlignment="CENTER" textFill="#261a62" />
+            </HBox>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+
+            <!--    <Text fx:id="showErrorLogin"-->
+            <!--          GridPane.columnIndex="1" GridPane.rowIndex="6"/>-->
+
+
+        </GridPane>
+    </children>
+</Pane>

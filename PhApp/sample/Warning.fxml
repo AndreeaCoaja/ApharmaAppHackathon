@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Warning">
+   <children>
+      <AnchorPane prefHeight="348.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="371.0" fitWidth="600.0" layoutY="-1.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dsBuffer.bmp.png" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="177.0" layoutY="115.0" prefHeight="162.0" prefWidth="372.0" text="&#9;&#9;&#9;Atentie! &#10;Combinatia acestor medicamente poate sa duca&#10; la ameteala. &#10;Este recomandat sa va asezati, sa nu va ridictati &#10;brusc de pe scaun. &#10;Este indicat sa beti suficienta apa.">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextArea>
+            <ImageView fitHeight="135.0" fitWidth="143.0" layoutX="34.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exc.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</HBox>
